@@ -67,7 +67,8 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        Log.i("MainActivity", "oncreate has been called")
+        Timber.i("oncreate has been called")
+        dessertsSold = 0
 
         // Use Data Binding to get reference to the views
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
@@ -154,6 +155,7 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
     override fun onStart() {
         super.onStart()
         Timber.i("onStart called")
+
     }
 
     override fun onResume() {
@@ -166,10 +168,6 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
         Timber.i("onPause called")
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        Timber.i("onDestroy called")
-    }
 
     override fun onRestart() {
         super.onRestart()
@@ -179,5 +177,10 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
     override fun onStop() {
         super.onStop()
         Timber.i("onStop called")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Timber.i("onDestroy called")
     }
 }
