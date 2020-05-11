@@ -1,106 +1,153 @@
-# Activity Lifecycle - DessertPusher 
+# Navigation
 
-This is the toy app for lesson 4 of the [Android App Development in Kotlin course on Udacity](https://classroom.udacity.com/courses/ud9012/lessons/e487c600-ed68-4576-a35a-12f211cf032e/concepts/6a155d63-8153-4a56-95cb-1dfdf06aa173).
+## DesertPusher 
 
-## DessertPusher
+<p align="center">
+  <a href="https://github.com/kevinmainairungu/andfun-kotlin-android-trivia#about-the-app">
+  </a>
+  <h3 align="center">About Me</h3>
+
+  <p align="center">
+    A trivia game<br>
+   on Android.
+    <br>
+     <img src="https://forthebadge.com/images/badges/built-for-android.svg" alt="droidconKE2020 built for Android">
+    <br>
+    </p>
+</p>
+
+<br>
+
+### Table of contents
+
+**1 [About the App](#about-the-app)**<br>
+**2 [General Preview](##general-preview)**<br>
+**3 [Technical](#technical)**<br>
+**4 [Work in Progress](#work-in-progress)**<br>
+**5 [Contributing](#contributing)**<br>
+**6 [License](#license)**<br>
+**7 [Versions](#versions)**<br>
+**8 [Contributers](#contributers)**<br>
+
+:point_down: :point_down: :point_down: :point_down: :point_down:
+
+
+<hr>
+
+# About the app
 
 DessertPusher is a game about making desserts. Press the button, make a dessert, earn the big bucks.
 
 This app is for exploring the [Activity Lifecycle callback methods](https://developer.android.com/guide/components/activities/activity-lifecycle) and the [Lifecycle](https://developer.android.com/reference/android/arch/lifecycle/Lifecycle) object.
+<hr>
 
+## General Preview
 
-## Screenshots
+#### Screenshots
 
 ![Screenshot1](screenshots/screen0.png) ![Screenshot1](screenshots/screen1.png) ![Screenshot1](screenshots/screen2.png)
 
-## How to use this repo while taking the course
+<hr>
+
+## Technical
+
+## Permissions
+
+* Any permissions needed by the app i.e:
+
+1. Internet
+2. Browse phone
+
+<hr>
+
+#### Running the project
+You can:
+
+    a. clone the project and compile it yourself in android studio(Most up to date)
+    b. Run the already compiled version on the(the proect comes with an apk folderwith various apk versions).
+
+<hr>
+
+### TECHNICAL
+
+#### How to use
+
+**1. Required to run project:**
+       ` - To run this project use Android studio 3.* and later. It will be less messy.
+         - Gradle version used: gradle 4.0. You can use multiple gradle versions vby having them stored offline. [You can read this to set it up.](www.sth)
+        `
+
+**2. Clone this repository :**
+ 
+         `https://github.com/kevinmainairungu/andfun-kotlin-dessert-pusher`
+         
+**3. open Project in Android Studio
+
+**4. Build Project**
+
+**5. Incase of an eror when building project, update your gradle version, Build Tools download**
 
 
-Each code repository in this class has a chain of commits that looks like this:
+#### Dependencies
 
-![listofcommits](https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58befe2e_listofcommits/listofcommits.png)
-
-These commits show every step you'll take to create the app. Each commit contains instructions for completing the that step.
-
-Each commit also has a **branch** associated with it of the same name as the commit message, seen below:
-
-![branches](https://d17h27t6h515a5.cloudfront.net/topher/2017/April/590390fe_branches-ud855/branches-ud855.png
-)
-Access all branches from this tab
-
-![listofbranches](https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58befe76_listofbranches/listofbranches.png
-)
+## To Do List
 
 
-![branchesdropdown](https://d17h27t6h515a5.cloudfront.net/topher/2017/April/590391a3_branches-dropdown-ud855/branches-dropdown-ud855.png
-)
-
-The branches are also accessible from the drop-down in the "Code" tab
-
-
-## Working with the Course Code
-
-Here are the basic steps for working with and completing exercises in the repo.
-
-The basic steps are:
-
-1. Clone the repo
-2. Checkout the branch corresponding to the step you want to attempt
-3. Find and complete the TODOs
-4. Optionally commit your code changes
-5. Compare your code with the solution
-6. Repeat steps 2-5 until you've gone trough all the steps to complete the toy app
+- [x] Adding a findViewById resource instance for the images
+- [ ] SplashScreen
+- [x] Binding data
+- [x] Updating the App to gradle 5.x
+- [X] Button for the 'done' functionality
+- [ ] Creating additional activities for more details
+- [ ] Add recycler view
+- [ ] Link to projects
 
 
-**Step 1: Clone the repo**
 
-As you go through the course, you'll be instructed to clone the different exercise repositories, so you don't need to set these up now. You can clone a repository from github in a folder of your choice with the command:
+#### CONTRIBUTING
+### Assets
+* Credit to artists(music,images,gifs...)
 
-```bash
-git clone https://github.com/udacity/REPOSITORY_NAME.git
-```
+### List of the Contributors on GitHub
+* [Contributors](https://https://github.com/kevinmainairungu/andfun-kotlin-dessert-pushera#about-the-app/graphs/contributors)
 
-**Step 2: Checkout the step branch**
+### Want to contribute?
+I would/ We'd love to have your help in making  **{this app (About me)}** better. The project is still very incomplete, but if there's an issue you'd like to see addressed sooner rather than later, let me(/us) know. 
 
-As you go through different steps in the code, you'll be told which step you're on, as well as a link to the corresponding branch.
+Before you contribute though read the contributing guide here: [COntributing.md](https://github.com/kevinmainairungu/andfun-kotlin-dessert-pusher#about-the-app/contributing.md)
 
-You'll want to check out the branch associated with that step. The command to check out a branch would be:
+For any concerns, please open an [issue](https://github.com/kevinmainairungu/andfun-kotlin-android-trivia#about-the-app/issues), or JUST, [fork the project and send a pull request{edit this}](https://github.com/kevinmainairungu/andfun-kotlin-dessert-pusher#about-the-app/pulls). 
 
-```bash
-git checkout BRANCH_NAME
-```
+<hr>
 
-**Step 3: Find and complete the TODOs**
+## License 
+* see [LICENSE](https://github.com/kevinmainairungu/andfun-kotlin-dessert-pusher#about-the-app/blob/master/LICENSE) file
 
-Once you've checked out the branch, you'll have the code in the exact state you need. You'll even have TODOs, which are special comments that tell you all the steps you need to complete the exercise. You can easily navigate to all the TODOs using Android Studio's TODO tool. To open the TODO tool, click the button at the bottom of the screen that says TODO. This will display a list of all comments with TODO in the project. 
 
-We've numbered the TODO steps so you can do them in order:
-![todos](https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58bf00e7_todos/todos.png
-)
+## Versions 
+* Version X.Y  DATE 12/2/2019
 
-**Step 4: Commit your code changes**
 
-After You've completed the TODOs, you can optionally commit your changes. This will allow you to see the code you wrote whenever you return to the branch. The following git code will add and save **all** your changes.
 
-```bash
-git add .
-git commit -m "Your commit message"
-```
+## Contributers
+For personal feedback or questions feel free to contact me via the mail address, which is mentioned on my [Github profile](link (https://github.com/kevinmainairungu). If you have found any bugs or want to post a feature request please use the [bugtracker](https://github.com/kevinmainairungu/andfun-kotlin-dessert-pusher/issues) to report them.
 
-**Step 5: Compare with the solution**
 
-Most exercises will have a list of steps for you to check off in the classroom. Once you've checked these off, you'll see a pop up window with a link to the solution code. Note the **Diff** link:
+#### Developer/Company
+* Homepage:  
+* e-mail: 
+* Twitter: [@maina_irungu_](https://twitter.com/maina_irungu_ "maina_irungu_")
+* other communication channels i.e Social Media, Forum etc
 
-![solutionwindow](https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58bf00f9_solutionwindow/solutionwindow.png
-)
 
-The **Diff** link will take you to a Github diff as seen below:
-![diff](https://d17h27t6h515a5.cloudfront.net/topher/2017/March/58bf0108_diffsceenshot/diffsceenshot.png
-)
+https://contributors-img.firebaseapp.com/
 
-All of the code that was added in the solution is in green, and the removed code (which will usually be the TODO comments) is in red. 
+<hr>
 
-You can also compare your code locally with the branch of the following step.
+If its open source:
 
-## Report Issues
-Notice any issues with a repository? Please file a [github issue](https://github.com/udacity/andfun-kotlin-dessert-pusher/issues) in this repository.
+[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source-200x33.png?v=103)](https://github.com/ellerbrock/open-source-badge/)  
+
+Licence is MIT:
+
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge)]()
