@@ -32,7 +32,7 @@ const val KEY_VALUE = "key_revenue"
 const val DESERT_SOLD = "desert_sold"
 const val DESERT_TIMER_COUNT = "desert_timer_count"
 
-// TODO create a saveinstancestate for the desert_sold and for the timer
+// TODO create a saveInstanceState for the desert_sold and for the timer
 
 class MainActivity : AppCompatActivity(), LifecycleObserver {
 
