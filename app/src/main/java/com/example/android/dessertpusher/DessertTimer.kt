@@ -73,7 +73,7 @@ class DessertTimer(lifecycle: Lifecycle): LifecycleObserver {
     }
     @OnLifecycleEvent(Lifecycle.Event.ON_STOP)
     fun stopTimer() {
-        Timber.i("staff just stopped working")
+        Timber.i("On stop for stopTimer")
         // Removes all pending posts of runnable from the handler's queue, effectively stopping the
         // timer
         handler.removeCallbacks(runnable)

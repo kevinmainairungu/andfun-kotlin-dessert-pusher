@@ -99,10 +99,7 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
         // Make sure the correct dessert is showing
         binding.dessertButton.setImageResource(currentDessert.imageId)
     }
-    override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
-        super.onRestoreInstanceState(savedInstanceState)
-        Timber.i("onRestoreInstanceState called")
-    }
+
     /**
      * Updates the score when the dessert is clicked. Possibly shows a new dessert.
      */
@@ -170,12 +167,16 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
         return super.onOptionsItemSelected(item)
     }
 // on_save_instance_state to parcing out_state for Bundle. Bundle contains a key value pair. (string and value)
-    override fun onSaveInstanceState(outState: Bundle?) {
-        super.onSaveInstanceState(outState)
-        outState?.putInt(KEY_VALUE, revenue)
-        outState?.putInt(DESERT_SOLD, dessertsSold)
-        outState?.putInt(DESERT_TIMER_COUNT, dessertTimer.secondsCount)
+    override fun onSaveInstanceState(outState: Bundle) {
+        outState.putInt(KEY_VALUE, revenue)
+        outState.putInt(DESERT_SOLD, dessertsSold)
+        outState.putInt(DESERT_TIMER_COUNT, dessertTimer.secondsCount)
         Timber.i("onSaveInstanceState called")
+        super.onSaveInstanceState(outState)
+    }
+    override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
+        super.onRestoreInstanceState(savedInstanceState)
+        Timber.i("onRestoreInstanceState called")
     }
 
     override fun onStart() {
