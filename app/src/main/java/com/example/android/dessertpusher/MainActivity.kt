@@ -86,9 +86,9 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
         dessertTimer = DessertTimer(this.lifecycle)
 // we are going to check whether the app is being  created for the first time or being restarted. if being restarted use onStart if created for the first time use onCreate
         if (savedInstanceState != null) {
-            revenue = savedInstanceState.getInt(KEY_VALUE)
-            dessertsSold = savedInstanceState.getInt(DESERT_SOLD)
-            dessertTimer.secondsCount = savedInstanceState.getInt(DESERT_TIMER_COUNT)
+            revenue = savedInstanceState.getInt(KEY_VALUE, 0)
+            dessertsSold = savedInstanceState.getInt(DESERT_SOLD, 0)
+            dessertTimer.secondsCount = savedInstanceState.getInt(DESERT_TIMER_COUNT, 0)
             showCurrentDessert()
         }
 
@@ -99,7 +99,10 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
         // Make sure the correct dessert is showing
         binding.dessertButton.setImageResource(currentDessert.imageId)
     }
-
+    override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
+        super.onRestoreInstanceState(savedInstanceState)
+        Timber.i("onRestoreInstanceState called")
+    }
     /**
      * Updates the score when the dessert is clicked. Possibly shows a new dessert.
      */
