@@ -14,11 +14,10 @@
  * limitations under the License.
  */
 
-package com.example.android.dessertpusher
+package com.kitchen.android.dessertpusher
 
 import android.content.ActivityNotFoundException
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
@@ -26,7 +25,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ShareCompat
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.LifecycleObserver
-import com.example.android.dessertpusher.databinding.ActivityMainBinding
+import com.kitchen.android.dessertpusher.databinding.ActivityMainBinding
 import timber.log.Timber
 const val KEY_VALUE = "key_revenue"
 const val DESERT_SOLD = "desert_sold"

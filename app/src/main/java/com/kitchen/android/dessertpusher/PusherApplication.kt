@@ -1,4 +1,4 @@
-package com.example.android.dessertpusher
+package com.kitchen.android.dessertpusher
 
 import android.app.Application
 import timber.log.Timber
